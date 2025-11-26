@@ -1,3 +1,5 @@
+package matrizAdjacencia;
+
 public class Vertices {
     private int grau;
     private String nome_vertice;
@@ -8,6 +10,17 @@ public class Vertices {
             throw new IllegalArgumentException("O nome do vértice não pode ser nulo ou vazio.");
         }
         this.nome_vertice = nome_vertice;
+    }
 
+    public void incrementarGrau() {
+        this.grau++;
+    }
+
+    public int getGrau() {
+        return grau;
+    }
+
+    public String getNome_vertice() {
+        return nome_vertice;
     }
 }
